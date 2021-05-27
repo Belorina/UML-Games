@@ -1,5 +1,6 @@
 ﻿using System;
 using ClasseBase;
+using Heritage;
 
 namespace UML_Cours_Game
 {
@@ -19,10 +20,24 @@ namespace UML_Cours_Game
             perso1.Force += 25;
             Console.WriteLine("La force de perso1 est : " + perso1.Force);
 
-            Console.WriteLine(perso1.obtenirDescription());
+            Console.WriteLine(perso1.obtenirDescription());     // premiere version 
 
-            string msgDescription = perso1.obtenirDescription();
-            Console.WriteLine(msgDescription);
+            // string msgDescription = perso1.obtenirDescription();    // deuxieme version
+            // Console.WriteLine(msgDescription);
+
+            // Heritage 
+            AnimalDomestique animal1 = new AnimalDomestique();
+            animal1.seDeplacer();
+
+            Gremlin g = new Gremlin();
+            g.seDeplacer();
+            g.attaquer(90);     // forcer de metre un parametre
+            // animal1.attaquer(90); // NON dispo dans doc de animal, attaquer(..) est isole chez gremlin
+            Console.WriteLine(g);
+            g.Nom = "Gizmo";
+            Console.WriteLine("Le Gremlin est" + g.Nom);
+
+
 
 
         }
