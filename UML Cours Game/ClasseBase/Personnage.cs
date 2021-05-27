@@ -40,6 +40,12 @@ namespace ClasseBase
             Console.WriteLine("J'attaque!");
         }
 
+
+        public string obtenirDescription ()
+        {
+            string description = "je suis un personnage hello";
+            return (description);
+        }
     }
 
 
