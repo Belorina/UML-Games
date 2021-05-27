@@ -1,8 +1,9 @@
 {
   "runtimeOptions": {
     "additionalProbingPaths": [
-      "C:\\Users\\bender\\.dotnet\\store\\|arch|\\|tfm|",
-      "C:\\Users\\bender\\.nuget\\packages"
+      "C:\\Users\\ozcan\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\ozcan\\.nuget\\packages",
+      "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
     ]
   }
 }

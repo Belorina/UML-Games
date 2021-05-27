@@ -6,6 +6,7 @@ using System.Collections.Generic;
 using Reflexive;
 using Composition;
 using ClasseAssociation;
+using Exo1;
 
 namespace UML_Cours_Games21
 {
@@ -130,6 +131,18 @@ namespace UML_Cours_Games21
                                 + k1.boss.Nom + " et il a fait " + k1.HitPoints);
 
 
+            // Exo 1
+            Officier officier1 = new Officier();
+            
+            officier1.Grade = "Capitaine";
+            Console.WriteLine("Le grade du officier1 est : " + officier1.Grade);
+            officier1.quiPilote();
+
+            Vaisseau vaisseau1 = new Vaisseau();
+
+            vaisseau1.Type = "Spaciale";
+            System.Console.WriteLine("Le type de vaisseau est: " + vaisseau1.Type);
+            vaisseau1.quiVole();
         }
     }
 }
