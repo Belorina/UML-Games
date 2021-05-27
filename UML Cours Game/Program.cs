@@ -1,6 +1,7 @@
 ﻿using System;
 using ClasseBase;
 using Heritage;
+using Association;
 
 namespace UML_Cours_Game
 {
@@ -35,8 +36,14 @@ namespace UML_Cours_Game
             // animal1.attaquer(90); // NON dispo dans doc de animal, attaquer(..) est isole chez gremlin
             Console.WriteLine(g);
             g.Nom = "Gizmo";
-            Console.WriteLine("Le Gremlin est" + g.Nom);
+            Console.WriteLine("Le Gremlin est " + g.Nom);
 
+
+            // Association 
+            Level level1 = new Level();
+            Brick brick1 = new Brick();
+
+            brick1.seCasser();
 
 
 
